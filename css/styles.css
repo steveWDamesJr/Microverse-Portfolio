@@ -64,3 +64,16 @@
   min-width: 327px;
   color: #344563;
 }
+
+section {
+  height: 718px;
+  width: 370px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.Homepage {
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
