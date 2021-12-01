@@ -6,6 +6,8 @@
 
 
 Additional description about the project and its features.
+![screenshot](./images/Microverse-Portfolio.png)
+
 
 ## Built With
 
@@ -25,7 +27,6 @@ To get a local copy up and running follow these simple example steps.
 
 ### Usage
 - View Portfolio 
-
 
 
 ## Author
