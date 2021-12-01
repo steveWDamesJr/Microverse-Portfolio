@@ -23,14 +23,18 @@ html {
   height: auto;
 }
 
-.logo-title {
+.logo-title h3 {
   margin-left: 25px;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
-  width: 76px;
+  width: 89px;
   color: #6070ff;
+}
+
+.logo-title {
+  text-decoration: none;
 }
 
 .ham-img {
@@ -39,6 +43,7 @@ html {
   height: 12px;
   width: 18px;
   color: #6070ff;
+  text-decoration: none;
 }
 
 .hero-title {
