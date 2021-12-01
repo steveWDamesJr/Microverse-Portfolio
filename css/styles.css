@@ -13,7 +13,7 @@
 }
 
 .con1 {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
@@ -24,7 +24,7 @@
 .logo-title {
   margin-left: 5px;
   font-size: 18px;
-  font-style: bold;
+  font-style: normal;
   font-weight: 700;
   line-height: 20px;
   width: 76px;
@@ -37,4 +37,30 @@
   height: 12px;
   width: 18px;
   color: #6070ff;
+}
+
+.hero-title {
+  align-items: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  height: 150px;
+  line-height: 52px;
+  margin-bottom: 12px;
+  margin-top: 144px;
+  width: 290px;
+  color: #172b4d;
+}
+
+.hero-description {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: start;
+  margin-bottom: 12px;
+  margin-right: 24px;
+  max-width: 327px;
+  min-width: 327px;
+  color: #344563;
 }
