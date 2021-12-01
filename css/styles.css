@@ -11,3 +11,30 @@
   flex-direction: column;
   min-width: 375px;
 }
+
+.con1 {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  min-width: 375px;
+  height: auto;
+}
+
+.logo-title {
+  margin-left: 5px;
+  font-size: 18px;
+  font-style: bold;
+  font-weight: 700;
+  line-height: 20px;
+  width: 76px;
+  color: #6070ff;
+}
+
+.ham-img {
+  position: relative;
+  left: -35px;
+  height: 12px;
+  width: 18px;
+  color: #6070ff;
+}
