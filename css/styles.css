@@ -10,6 +10,8 @@ html {
   align-items: center;
   flex-direction: column;
   min-width: 375px;
+  padding-right: 0;
+  margin-left: -10px;
 }
 
 .con1 {
@@ -22,7 +24,7 @@ html {
 }
 
 .logo-title {
-  margin-left: 5px;
+  margin-left: 25px;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -47,7 +49,7 @@ html {
   height: 150px;
   line-height: 52px;
   margin-bottom: 12px;
-  margin-top: 144px;
+  margin-top: 95px;
   width: 290px;
   color: #172b4d;
 }
@@ -59,7 +61,7 @@ html {
   line-height: 24px;
   text-align: start;
   margin-bottom: 12px;
-  margin-right: 24px;
+  margin-right: -2px;
   max-width: 327px;
   min-width: 327px;
   color: #344563;
@@ -67,15 +69,14 @@ html {
 
 section {
   height: 718px;
-  width: 370px;
-  padding-left: 24px;
-  padding-right: 24px;
+  max-width: 375px;
 }
 
 .Homepage {
-  background-image: url(/background.png);
+  background-image: url(/images/background.png);
   background-repeat: no-repeat;
   background-size: contain;
+  padding: 0 25px 0 20px;
 }
 
 .icon-container .icon-list {
