@@ -77,3 +77,30 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.icon-container .icon-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  margin-right: 24px;
+  padding-left: 0;
+}
+
+.social-icons {
+  float: left;
+  margin-right: 20px;
+  height: 19.96px;
+  width: 19.99px;
+  text-decoration: none; 
+  color: #505f79;
+}
+
+.connect {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  color: #7f8cff;
+}
