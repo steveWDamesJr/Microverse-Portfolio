@@ -1,0 +1,112 @@
+html {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 375px;
+  padding-right: 0;
+  margin-left: -10px;
+}
+
+.con1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  min-width: 375px;
+  height: auto;
+}
+
+.logo-title h3 {
+  margin-left: 25px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  width: 89px;
+  color: #6070ff;
+}
+
+.logo-title {
+  text-decoration: none;
+}
+
+.ham-img {
+  position: relative;
+  left: -35px;
+  height: 12px;
+  width: 18px;
+  color: #6070ff;
+  text-decoration: none;
+}
+
+.hero-title {
+  align-items: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  height: 150px;
+  line-height: 52px;
+  margin-bottom: 12px;
+  margin-top: 95px;
+  width: 290px;
+  color: #172b4d;
+}
+
+.hero-description {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: start;
+  margin-bottom: 12px;
+  margin-right: -2px;
+  max-width: 327px;
+  min-width: 327px;
+  color: #344563;
+}
+
+section {
+  height: 718px;
+  max-width: 375px;
+}
+
+.Homepage {
+  background-image: url(https://raw.githubusercontent.com/steveWDamesJr/Microverse-Portfolio/Add-Work-section-and-About-me/images/background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0 25px 0 20px;
+}
+
+.icon-container .icon-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  margin-right: 24px;
+  padding-left: 0;
+}
+
+.social-icons {
+  float: left;
+  margin-right: 20px;
+  height: 19.96px;
+  width: 19.99px;
+  text-decoration: none;
+  color: #505f79;
+}
+
+.connect {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  color: #7f8cff;
+}
