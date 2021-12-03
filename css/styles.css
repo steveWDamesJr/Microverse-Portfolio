@@ -12,6 +12,8 @@ html {
   align-items: center;
   flex-direction: column;
   min-width: 375px;
+  margin-top: 58px;
+  margin-left: -10px;
 }
 
 .con1 {
@@ -123,6 +125,7 @@ article {
   background-color: #fff;
   margin-top: 130px;
   left: calc(50% - 327px / 2);
+  color: #172b4d;
 }
 
 .card-img {
