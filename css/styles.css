@@ -433,6 +433,10 @@ section {
   margin-right: auto;
 }
 
+.All-skills-list {
+  padding-left: 0;
+}
+
 .All-skills li {
   list-style: none;
 }
