@@ -4,6 +4,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   background-color: #fff;
+  margin-top: 0;
 }
 
 .wrapper {
@@ -12,8 +13,9 @@ html {
   align-items: center;
   flex-direction: column;
   min-width: 375px;
-  margin-top: 58px;
+  margin-top: 0;
   margin-left: -10px;
+  background-color: grey;
 }
 
 .con1 {
@@ -24,6 +26,7 @@ html {
   min-width: 375px;
   height: auto;
   background-color: #fff;
+  padding-top: 58px;
 }
 
 .logo-title {
@@ -82,7 +85,7 @@ section {
 }
 
 .Homepage {
-  background-image: url(https://raw.githubusercontent.com/steveWDamesJr/Microverse-Portfolio/Add-About-me-and-Works-section/images/background.png);
+  background-image: url(/images/background.png);
   border-bottom-left-radius: 70px;
   background-repeat: no-repeat;
   width: 375px;
@@ -123,7 +126,7 @@ section {
   top: 1438px;
   border-radius: 16px;
   background-color: #fff;
-  margin-top: 130px;
+  margin-top: 87px;
   left: calc(50% - 327px / 2);
   color: #172b4d;
 }
@@ -302,20 +305,21 @@ section {
   grid-auto-flow: row;
   justify-items: center;
   gap: 1em;
-  margin-top: -55px;
+  margin-top: -67px;
   width: 375px;
   background-color: #f7f7f9;
   height: auto;
+  padding-top: 100px;
 }
 
-.card2 {
+.about-me-card {
   border-top-right-radius: 70px;
   background-repeat: no-repeat;
   width: 375px;
-  height: 718px;
+  height: auto;
   background-size: contain;
   background-color: #fff;
-  margin-top: 88px;
+  margin-top: 112px;
 }
 
 .about-myself {
