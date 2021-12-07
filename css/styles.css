@@ -85,7 +85,7 @@ section {
 }
 
 .Homepage {
-  background-image: url(/images/background.png);
+  background-image: url(https://raw.githubusercontent.com/steveWDamesJr/Microverse-Portfolio/main/images/background.png);
   border-bottom-left-radius: 70px;
   background-repeat: no-repeat;
   width: 375px;
