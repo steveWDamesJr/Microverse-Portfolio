@@ -15,7 +15,7 @@ html {
   min-width: 375px;
   margin-top: 0;
   margin-left: -10px;
-  background-color: grey;
+  background-color: #e5e5e5;
 }
 
 .con1 {
@@ -566,6 +566,7 @@ section {
   line-height: 20px;
   color: #172b4d;
   border: none;
+  text-indent: 16px;
 }
 
 .con-frm-mess {
@@ -574,10 +575,16 @@ section {
   left: 0;
   top: 0;
   bottom: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
   border-radius: 8px;
   background: #fff;
   border: 1px solid #cfd8dc;
   margin-bottom: 10px;
+  text-indent: 16px;
 }
 
 ::placeholder {
@@ -585,7 +592,11 @@ section {
   font-size: 15px;
   line-height: 24px;
   color: #b3bac5;
-  padding-left: 16px;
+}
+
+textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
 }
 
 .frm-button {
@@ -643,40 +654,4 @@ section {
   background: #2230d2;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
-}
-
-@media screen and (min-width: 992px) {
-  .nav {
-    display: none;
-  }
-
-  .Desktop-nav {
-    display: inherit;
-  }
-
-  .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 1440px;
-    height: auto;
-    margin-top: 0;
-    margin-left: -10px;
-    background-color: red;
-  }
-
-  .Homepage {
-    background-image: url(/images/Desktop-back.png);
-    border-bottom-left-radius: 70px;
-    background-repeat: no-repeat;
-    width: 1440px;
-    height: 916px;
-    left: 0;
-    top: 1px;
-    background-size: contain;
-    background-color: #fff;
-    z-index: 1;
-  }
-
 }
