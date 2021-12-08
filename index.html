@@ -235,8 +235,11 @@
             <label for="email-address"></label>
             <input class="con-frm-input" type="email" name="_replyto" id="email-address"
               placeholder="email@microverse.org" required>
-
-
+            <label for="message"></label>
+            <textarea class="con-frm-mess" rows="5" name="message" id="message" placeholder="Write your message here"
+              required maxlength="500"></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            <input class="frm-button" type="submit" value="Get In Touch">
           </div>
         </form>
       </div>
