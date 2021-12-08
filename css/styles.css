@@ -493,6 +493,22 @@ section {
   margin-left: 16px;
 }
 
+.contact-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(https://raw.githubusercontent.com/steveWDamesJr/Microverse-Portfolio/Feature-Contact-Form/images/con-shapes.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 800px;
+  margin-top: -114px;
+  left: 0;
+  top: 5410px;
+  background-color: #6070ff;
+  border-top-left-radius: 70px;
+}
+
 .line {
   border: 1px solid#Dfe1e6;
   margin: 5px 0;
