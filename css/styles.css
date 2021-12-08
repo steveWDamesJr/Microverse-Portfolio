@@ -506,7 +506,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   width: 375px;
-  height: 800px;
+  height: 836px;
   margin-top: -114px;
   left: 0;
   top: 5410px;
@@ -550,7 +550,7 @@ section {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
-  margin-bottom: 69px;
+  margin-bottom: 80px;
   margin-left: 20px;
 }
 
@@ -612,6 +612,7 @@ textarea {
   align-self: flex-start;
   justify-content: center;
   margin-left: 20px;
+  margin-bottom: 7px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
