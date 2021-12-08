@@ -651,6 +651,10 @@ textarea {
   display: none;
 }
 
+.desk-card-img {
+  display: none;
+}
+
 @media screen and (min-width: 993px) {
   .header-container {
     width: 100%;
@@ -710,5 +714,35 @@ textarea {
 
   .works-section-grid {
     width: 100%;
+  }
+
+  .card {
+    width: 82%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 24px;
+  }
+
+  .card-img {
+    display: none;
+  }
+
+  .desk-card-img {
+    display: inherit;
+    padding: 24px;
+    height: 448px;
+  }
+
+  .desk-img-alt {
+    order: 1;
+  }
+
+  .text-cont {
+    padding-left: 36px;
+  }
+
+  .card-description {
+    width: 80%;
+    height: auto;
   }
 }
