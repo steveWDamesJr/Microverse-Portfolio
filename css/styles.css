@@ -36,7 +36,7 @@ html {
   font-weight: 700;
   line-height: 20px;
   width: 89px;
-  color: #6070FF;
+  color: #6070ff;
   text-decoration: none;
 }
 
@@ -45,7 +45,7 @@ html {
   left: -35px;
   height: 12px;
   width: 18px;
-  color: #6070FF;
+  color: #6070ff;
   text-decoration: none;
 }
 
@@ -63,7 +63,7 @@ html {
   margin-top: 103px;
   margin-bottom: 12px;
   margin-left: 24px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .hero-description {
@@ -74,14 +74,8 @@ html {
   text-align: start;
   margin-bottom: 12px;
   margin-left: 24px;
-  max-width: 327px;
-  min-width: 327px;
+  width: 89%;
   color: #344563;
-}
-
-section {
-  height: 718px;
-  max-width: 23.438em;
 }
 
 .Homepage {
@@ -113,7 +107,7 @@ section {
   margin-bottom: 12px;
   margin-left: 24px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 .card {
@@ -128,7 +122,7 @@ section {
   background-color: #fff;
   margin-top: 87px;
   left: calc(50% - 327px / 2);
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .card-img {
@@ -181,7 +175,7 @@ section {
   left: 67px;
   top: 12px;
   border-radius: 0;
-  color: #C1C7D0;
+  color: #c1c7d0;
 }
 
 .art-name {
@@ -194,7 +188,7 @@ section {
   width: 89px;
   left: 0;
   top: 8px;
-  color: #7A869A;
+  color: #7a869a;
 }
 
 .year {
@@ -207,7 +201,7 @@ section {
   width: 29px;
   left: 0;
   top: 8px;
-  color: #7A869A;
+  color: #7a869a;
 }
 
 .card-description {
@@ -236,19 +230,19 @@ section {
 
 .languages {
   padding: 4px 12px;
-  background-color: #EBEBFF;
-  color: #6070FF;
-  border: 1px solid #EBEBEB;
+  background-color: #ebebff;
+  color: #6070ff;
+  border: 1px solid #ebebeb;
   border-radius: 8px;
   font-size: 12px;
 }
 
 .card-button {
   padding: 12px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   text-decoration: none;
-  color: #396DF2;
+  color: #396df2;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -264,7 +258,7 @@ section {
   height: 24px;
   left: 252px;
   top: calc(50% - 48px / 2 + 57.5px);
-  background: #6070FF;
+  background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
@@ -276,7 +270,7 @@ section {
   height: 24px;
   left: 407px;
   top: calc(50% - 48px / 2 + 57.5px);
-  background: #2230D2;
+  background: #2230d2;
   border-radius: 8px;
   color: #fff;
 }
@@ -287,7 +281,7 @@ section {
   height: 24px;
   left: 564px;
   top: calc(50% - 48px / 2 + 57.5px);
-  border: 1px solid #C1C7D0;
+  border: 1px solid #c1c7d0;
   box-sizing: border-box;
   border-radius: 8px;
 }
@@ -307,7 +301,7 @@ section {
   gap: 1em;
   margin-top: -67px;
   width: 23.438em;
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   height: auto;
   padding-top: 100px;
 }
@@ -333,15 +327,15 @@ section {
   margin-top: 103px;
   margin-bottom: 12px;
   margin-left: 24px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .card-button2 {
   padding: 12px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   text-decoration: none;
-  color: #396DF2;
+  color: #396df2;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -353,7 +347,7 @@ section {
 
 .card-button2:hover {
   padding: 12px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
@@ -364,14 +358,14 @@ section {
   left: 12px;
   top: 12px;
   top: calc(50% - 48px / 2 + 57.5px);
-  background: #6070FF;
+  background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
 }
 
 .card-button2:focus {
   padding: 12px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
@@ -382,7 +376,7 @@ section {
   left: 12px;
   top: 12px;
   top: calc(50% - 48px / 2 + 57.5px);
-  background: #2230D2;
+  background: #2230d2;
   color: #fff;
 }
 
@@ -398,7 +392,7 @@ section {
   left: 12px;
   top: 12px;
   top: calc(50% - 48px / 2 + 57.5px);
-  border: 1px solid #C1C7D0;
+  border: 1px solid #c1c7d0;
   box-sizing: border-box;
 }
 
@@ -467,7 +461,7 @@ section {
 
 .programs {
   display: flex;
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   padding: 7px 0 7px 15px;
   border-radius: 8px;
 }
@@ -510,7 +504,7 @@ section {
   margin-top: -114px;
   left: 0;
   top: 5410px;
-  background-color: #6070FF;
+  background-color: #6070ff;
   border-top-left-radius: 70px;
 }
 
@@ -545,7 +539,7 @@ section {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #EBEBFF;
+  color: #ebebff;
   margin-bottom: 80px;
   margin-left: 20px;
 }
@@ -560,7 +554,7 @@ section {
   background: #fff;
   font-size: 17px;
   line-height: 20px;
-  color: #172B4D;
+  color: #172b4d;
   border: none;
   text-indent: 16px;
 }
@@ -575,10 +569,10 @@ section {
   font-weight: normal;
   font-size: 17px;
   line-height: 20px;
-  color: #172B4D;
+  color: #172b4d;
   border-radius: 8px;
   background: #fff;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   margin-bottom: 10px;
   text-indent: 16px;
 }
@@ -587,7 +581,7 @@ section {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  color: #B3BAC5;
+  color: #b3bac5;
 }
 
 textarea {
@@ -614,7 +608,7 @@ textarea {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
   font-style: normal;
   border: none;
 }
@@ -631,7 +625,7 @@ textarea {
   height: 48px;
   left: 12px;
   top: 12px;
-  background: #6070FF;
+  background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
 }
@@ -648,7 +642,69 @@ textarea {
   height: 48px;
   left: 12px;
   top: 12px;
-  background: #2230D2;
+  background: #2230d2;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
+}
+
+.dsk-nav {
+  display: none;
+}
+
+@media screen and (min-width: 993px) {
+  .header-container {
+    width: 100%;
+    padding-left: 13%;
+  }
+
+  .ham-img {
+    display: none;
+  }
+
+  .dsk-nav {
+    display: inherit;
+  }
+
+  .dsk-nav-link {
+    display: flex;
+    padding-right: 14em;
+  }
+
+  .nav-links {
+    list-style: none;
+    margin-right: 1em;
+    font-weight: 500;
+    font-size: 0.938em;
+    color: #344563;
+  }
+
+  .Homepage {
+    background-image: url(/images/dsk-back.png);
+    width: 100%;
+    padding: 89px 20px 0 20px;
+  }
+
+  .wrapper {
+    min-width: 0;
+    background-size: cover;
+  }
+
+  .hero-title {
+    width: 50%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    height: 2%;
+  }
+
+  .hero-description {
+    width: 90%;
+  }
+
+  .hom-container {
+    width: 69%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+  }
 }
