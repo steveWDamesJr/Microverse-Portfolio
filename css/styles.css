@@ -493,6 +493,11 @@ section {
   margin-left: 16px;
 }
 
+.line {
+  border: 1px solid#Dfe1e6;
+  margin: 5px 0;
+}
+
 .contact-form {
   display: flex;
   justify-content: center;
@@ -509,9 +514,62 @@ section {
   border-top-left-radius: 70px;
 }
 
-.line {
-  border: 1px solid#Dfe1e6;
-  margin: 5px 0;
+.contact-me {
+  width: 375px;
+  height: 56px;
+  top: 4734px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  margin: 0;
+  padding-top: 115px;
+}
+
+.contact-description {
+  width: 327px;
+  height: 102px;
+  left: 24px;
+  top: 4802px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin-bottom: 69px;
+  margin-left: 20px;
+}
+
+.con-frm-input {
+  height: 48px;
+  width: 327px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  border: none;
+}
+
+.con-frm-mess {
+  height: 170px;
+  width: 327px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 992px) {
