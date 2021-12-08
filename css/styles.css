@@ -497,3 +497,39 @@ section {
   border: 1px solid#Dfe1e6;
   margin: 5px 0;
 }
+
+@media screen and (min-width: 992px) {
+  .nav {
+    display: none;
+  }
+
+  .Desktop-nav {
+    display: inherit;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1440px;
+    height: auto;
+    margin-top: 0;
+    margin-left: -10px;
+    background-color: red;
+  }
+
+  .Homepage {
+    background-image: url(/images/Desktop-back.png);
+    border-bottom-left-radius: 70px;
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 916px;
+    left: 0;
+    top: 1px;
+    background-size: contain;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+}
