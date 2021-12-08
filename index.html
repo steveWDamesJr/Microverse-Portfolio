@@ -161,7 +161,7 @@
         </div>
       </section>
 
-      <section class="card2">
+      <section class="about-me-card">
         <h2 class="about-myself">About <br> Myself</h2>
         <p class="hero-description">I’m a software developer! I can help you build a product, feature or website. Look
           through some of my work and experience! If you like what you see and have a project you need coded, don’t
@@ -220,6 +220,30 @@
       </section>
 
     </section>
+
+    <footer class="con-form-wrapper">
+      <div class="contact-form">
+        <h2 class="contact-me">Contact me</h2>
+        <p class="contact-description">If you have an application you are interested in developing, a feature that you
+          need built or a project that needs coding. I’d love to help with it.</p>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mrgjgzbv"
+          method="post">
+          <div class="frm-inputs-cont">
+            <label for="full-name"></label>
+            <input class="con-frm-input" type="text" name="name" id="full-name" placeholder="First and Last Name"
+              required maxlength="30">
+            <label for="email-address"></label>
+            <input class="con-frm-input" type="email" name="_replyto" id="email-address"
+              placeholder="email@microverse.org" required>
+            <label for="message"></label>
+            <textarea class="con-frm-mess" rows="5" name="message" id="message" placeholder="Write your message here"
+              required maxlength="500"></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            <input class="frm-button" type="submit" value="Get In Touch">
+          </div>
+        </form>
+      </div>
+    </footer>
 
   </main>
 </body>
