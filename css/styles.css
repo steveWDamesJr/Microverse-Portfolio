@@ -707,4 +707,8 @@ textarea {
     margin-right: auto;
     margin-top: 10%;
   }
+
+  .works-section-grid {
+    width: 100%;
+  }
 }
