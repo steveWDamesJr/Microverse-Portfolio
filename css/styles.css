@@ -1,5 +1,6 @@
 html {
   font-family: "Poppins", sans-serif;
+  font-size: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,79 +15,76 @@ html {
   flex-direction: column;
   min-width: 23.438em;
   margin-top: 0;
-  margin-left: -10px;
-  background-color: #e5e5e5;
+  background-color: #f7f7f9;
+  border: 0.06rem solid #f00;
+}
+
+img {
+  max-width: 100%;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  min-width: 23.438em;
-  height: auto;
+  min-width: 100%;
   background-color: #fff;
-  padding-top: 58px;
+  padding-top: 3.625em;
+  border: 0.06rem solid #0f0;
 }
 
 .logo-title {
-  margin-left: 25px;
-  font-size: 18px;
-  font-style: normal;
+  margin-left: 1.563em;
+  font-size: 1.125em;
+  
   font-weight: 700;
-  line-height: 20px;
-  width: 89px;
   color: #6070ff;
   text-decoration: none;
 }
 
 .ham-img {
   position: relative;
-  left: -35px;
-  height: 12px;
-  width: 18px;
+  left: -2.188em;
+  height: 0.75rem;
   color: #6070ff;
   text-decoration: none;
 }
 
 .hero-title {
-  font-size: 40px;
-  font-style: normal;
+  font-size: 2.5rem;
+  
   font-weight: 700;
-  line-height: 52px;
+  line-height: 3.25rem;
   letter-spacing: 0;
   text-align: left;
-  height: 150px;
-  width: 295px;
-  left: 24px;
-  top: 114px;
-  margin-top: 103px;
-  margin-bottom: 12px;
-  margin-left: 24px;
+  width: 61%;
+  margin-top: 6.438rem;
+  margin-bottom: 0.75rem;
+  margin-left: 1.5rem;
   color: #172b4d;
+  border: 1px solid #f00;
 }
 
 .hero-description {
-  font-size: 16px;
-  font-style: normal;
+  font-size: 1rem;
+  
   font-weight: 400;
-  line-height: 24px;
   text-align: start;
-  margin-bottom: 12px;
-  margin-left: 24px;
-  width: 89%;
+  margin-bottom: 0.8rem;
+  margin-left: 1.5rem;
+  width: 86%;
   color: #344563;
+  border: 1px solid #f00;
 }
 
 .Homepage {
   background-image: url(https://raw.githubusercontent.com/steveWDamesJr/Microverse-Portfolio/main/images/background.png);
-  border-bottom-left-radius: 70px;
+  border-bottom-left-radius: 4.375rem;
   background-repeat: no-repeat;
-  width: 23.438em;
-  height: 718px;
+  min-width: 40%;
+  height: 44.875rem;
   background-size: contain;
   background-color: #fff;
-  z-index: 1;
+  margin: 0;
 }
 
 .icon-list {
@@ -94,57 +92,45 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 179px;
+  width: 11.188rem;
   padding: 0;
-  margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
 .connect {
-  font-size: 16px;
-  font-style: normal;
+  font-size: 1rem;
+  
   font-weight: 500;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  margin-left: 24px;
-  line-height: 24px;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  margin-left: 1.5rem;
   color: #7f8cff;
 }
 
 .card {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 552px;
-  width: 327px;
-  top: 1438px;
-  border-radius: 16px;
+  height: 34.5rem;
+  border-radius: 1rem;
   background-color: #fff;
-  margin-top: 87px;
-  left: calc(50% - 327px / 2);
+  margin-top: 5.438rem;
   color: #172b4d;
+  padding: 1rem;
 }
 
 .card-img {
-  height: 220px;
-  width: 295px;
-  left: 16px;
-  top: 16px;
-  padding: 0 16px 0 16px;
-  border-radius: 8px;
+  height: auto;
+  width: 100%;
+  left: 1rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
 }
 
 .card-title {
-  height: 36px;
-  width: 295px;
-  left: 0;
-  top: 0;
-  font-size: 32px;
-  font-style: normal;
+  font-size: 2rem;
+  
   font-weight: 700;
-  line-height: 44px;
-  letter-spacing: 0;
-  text-align: left;
   margin-bottom: 0;
 }
 
@@ -153,34 +139,21 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 236px;
+  width: 80%;
   padding-left: 0;
   margin: 0;
 }
 
 .pr-name {
-  font-size: 13px;
-  font-style: normal;
+  font-size: 0.813rem;
+  
   font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0;
-  text-align: left;
-  height: 82%;
   color: #344563;
 }
 
-.dot {
-  height: 8px;
-  width: 8px;
-  left: 67px;
-  top: 12px;
-  border-radius: 0;
-  color: #c1c7d0;
-}
-
 .art-name {
-  font-size: 13px;
-  font-style: normal;
+  font-size: 0.813rem;
+  
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0;
@@ -193,7 +166,7 @@ html {
 
 .year {
   font-size: 13px;
-  font-style: normal;
+  
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0;
@@ -210,7 +183,7 @@ html {
   left: 0;
   top: 92px;
   font-size: 15px;
-  font-style: normal;
+  
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0;
@@ -299,7 +272,6 @@ html {
   grid-auto-flow: row;
   justify-items: center;
   gap: 1em;
-  margin-top: -67px;
   width: 23.438em;
   background-color: #f7f7f9;
   height: auto;
@@ -307,24 +279,27 @@ html {
 }
 
 .about-me-card {
-  border-top-right-radius: 70px;
   background-repeat: no-repeat;
   width: 23.438em;
   height: auto;
   background-size: contain;
+  margin: 0;
+  background-color: #f7f7f9;
+  padding-top: 7.125rem;
+}
+
+.about-back-container {
+  border-top-right-radius: 70px;
   background-color: #fff;
-  margin-top: 112px;
+  padding-top: 114px;
 }
 
 .about-myself {
   font-size: 40px;
-  font-style: normal;
+  margin-top: 0;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 3.25rem;
   text-align: left;
-  left: 24px;
-  top: 114px;
-  margin-top: 103px;
   margin-bottom: 12px;
   margin-left: 24px;
   color: #172b4d;
@@ -414,7 +389,7 @@ html {
   height: 24px;
   left: 12px;
   right: 78px;
-  font-style: normal;
+  
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -453,7 +428,7 @@ html {
   height: 24px;
   left: 12px;
   right: 78px;
-  font-style: normal;
+  
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -477,7 +452,7 @@ html {
   height: 24px;
   left: 76px;
   right: 12px;
-  font-style: normal;
+  
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -501,11 +476,15 @@ html {
   background-repeat: no-repeat;
   width: 23.438em;
   height: 836px;
-  margin-top: -114px;
+  /* margin-top: -114px; */
   left: 0;
   top: 5410px;
   background-color: #6070ff;
   border-top-left-radius: 70px;
+}
+
+.con-form-wrapper {
+  background-color: #fff;
 }
 
 .frm-inputs-cont {
@@ -519,7 +498,7 @@ html {
 .contact-me {
   height: 56px;
   top: 4734px;
-  font-style: normal;
+  
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -534,7 +513,7 @@ html {
   height: 102px;
   left: 24px;
   top: 4802px;
-  font-style: normal;
+  
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
@@ -565,7 +544,7 @@ html {
   left: 0;
   top: 0;
   bottom: 0;
-  font-style: normal;
+  
   font-weight: normal;
   font-size: 17px;
   line-height: 20px;
@@ -609,7 +588,7 @@ textarea {
   text-align: center;
   letter-spacing: 0.03em;
   color: #6070ff;
-  font-style: normal;
+  
   border: none;
 }
 
@@ -655,10 +634,36 @@ textarea {
   display: none;
 }
 
-@media screen and (min-width: 993px) {
+
+ @media screen and (min-width: 993px) {
+  
+  .Homepage {
+    background-image: url(/images/dsk-back.png);
+    width: 100%;
+    padding: 0;
+    margin: 47px 0 0 0;
+    background-color: #f7f7f9;
+    border-bottom-left-radius: 0;
+  }
+  
   .header-container {
     width: 100%;
-    padding-left: 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 0.06rem solid #0f0;
+    padding: 0 0 0 10rem;
+    height: auto;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #344563;
   }
 
   .ham-img {
@@ -682,12 +687,6 @@ textarea {
     color: #344563;
   }
 
-  .Homepage {
-    background-image: url(/images/dsk-back.png);
-    width: 100%;
-    padding: 89px 20px 0 20px;
-  }
-
   .wrapper {
     min-width: 0;
     background-size: cover;
@@ -709,15 +708,28 @@ textarea {
     width: 69%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 0;
+    padding-top: 215px;
+  }
+
+  .home-wrapper {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    border-bottom-left-radius: 4.375rem;
+    background-image: url(/images/dsk-back.png);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .works-section-grid {
     width: 100%;
+    padding-bottom: 7.125rem;
   }
 
   .card {
-    width: 82%;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0 24px;
@@ -741,8 +753,106 @@ textarea {
     padding-left: 36px;
   }
 
-  .card-description {
+   .card-description {
     width: 80%;
     height: auto;
+  } 
+
+
+  .program-lang {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    text-align: left;
   }
-}
+
+  .programs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: baseline;
+    align-content: center;
+  }
+
+  .program-name {
+    margin-left: 0;
+  }
+
+  .lang-container {
+    margin-bottom: 1.563em;
+    padding-top: 21px;
+  }
+
+  .frame-arrow {
+    padding-top: -5px;
+  }
+
+  .skills-container {
+    margin-bottom: 16px
+  }
+
+  /* .card2 {
+    height: auto;
+    width: 87.3rem;
+    margin-top: 0;
+    background-image: url(/images/contact-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    
+  } */
+
+  /* .about-me-card {
+    width: 87.3rem;
+    height: 1277px; 
+    margin-top: 0;
+  }  */
+
+    /* .contact-form {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    width: 89rem;
+    margin-top: -99px; */
+ }  
+
+  /* .about-myself {
+    margin-top: 0;
+  } */
+
+  /* .contact-description {
+    margin-left: auto;
+    margin-right: auto;
+    width: 28em;
+    margin-bottom: 0;
+  } */
+
+  /* .frm-button {
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  /* .frm-inputs-cont {
+    margin-bottom: 6em;
+  } */
+
+  /* .con-frm-input, .con-frm-mess {
+    width: 27.938em;
+  } */
+
+  /* .frm-button {
+    width: 8.75em;
+  } */
+
+  /* .con-form-wrapper {
+    height: 100%;
+    padding: 24px;
+  } */
+
+  }*/
+} 
