@@ -865,4 +865,47 @@ textarea {
   }
 
   /* Animations and Transitions for Exercise */
+  
+  .logo-title {
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+
+  .hero-title {
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+
+  .logo-title:hover,
+  .logo-title:focus {
+    background-color: #fff;
+    color: rgb(52, 159, 221);
+  }
+
+  .hero-title:hover,
+  .hero-title:focus {
+    background-color: #fff;
+    color: rgb(39, 141, 209);
+  }
+}
+.hero-title {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
