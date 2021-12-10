@@ -840,7 +840,6 @@ textarea {
 
   .footer-connect-container {
     background-color: #fff;
-    /* background-color: #f7f7f9; */
     width: 100%;
     height: 100%;
   }
@@ -864,4 +863,6 @@ textarea {
   .frm-inputs-cont {
     padding-bottom: 7.938rem;
   }
+
+  /* Animations and Transitions for Exercise */
 }
