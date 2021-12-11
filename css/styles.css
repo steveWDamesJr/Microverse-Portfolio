@@ -4,8 +4,8 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fff;
   margin-top: 0;
+  background-color: #fff;
 }
 
 .wrapper {
@@ -103,7 +103,7 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 34.5rem;
+  height: auto;
   border-radius: 1rem;
   background-color: #fff;
   margin-top: 5.438rem;
@@ -144,24 +144,14 @@ img {
 .art-name {
   font-size: 0.813rem;
   font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0;
-  text-align: left;
   width: 89px;
-  left: 0;
-  top: 8px;
   color: #7a869a;
 }
 
 .year {
   font-size: 13px;
   font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0;
-  text-align: left;
   width: 29px;
-  left: 0;
-  top: 8px;
   color: #7a869a;
 }
 
@@ -182,7 +172,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 210px;
+  width: 12.688rem;
   list-style: none;
   padding-left: 0;
   padding-bottom: 2px;
@@ -251,7 +241,6 @@ img {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  padding-bottom: 12px;
 }
 
 .works-section-grid {
@@ -455,7 +444,7 @@ img {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url(https://raw.githubusercontent.com/steveWDamesJr/Microverse-Portfolio/Feature-Contact-Form/images/con-shapes.png);
+  background-image: url(/images/contact-back-mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 23.438em;
@@ -541,6 +530,7 @@ img {
   font-size: 15px;
   line-height: 24px;
   color: #b3bac5;
+  padding-top: 1rem;
 }
 
 textarea {
@@ -560,7 +550,7 @@ textarea {
   background: #fff;
   align-self: flex-start;
   justify-content: center;
-  margin-left: 20px;
+  margin-left: 1.25rem;
   margin-bottom: 7px;
   font-weight: 500;
   font-size: 17px;
@@ -586,6 +576,7 @@ textarea {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
+  cursor: pointer;
 }
 
 .frm-button:focus {
@@ -613,9 +604,33 @@ textarea {
   display: none;
 }
 
+.desk-languages {
+  display: none;
+}
+
+.desk-card-des {
+  display: none;
+}
+
+.card-desk-title {
+  display: none;
+}
+
+.pr-desk-name {
+  display: none;
+}
+
+.art-desk-name {
+  display: none;
+}
+
+.desk-year {
+  display: none;
+}
+
 @media screen and (min-width: 993px) {
   .Homepage {
-    background-image: url(/images/dsk-back.png);
+    background-image: url(https://raw.githubusercontent.com/steveWDamesJr/Microverse-Portfolio/Portfolio-desktop-version/images/Desktop-back.png);
     width: 100%;
     padding: 0;
     margin: 47px 0 0 0;
@@ -673,6 +688,7 @@ textarea {
     padding-bottom: 0;
     margin-top: 0;
     height: 2%;
+    color: #091e42;
   }
 
   .hom-container {
@@ -689,7 +705,7 @@ textarea {
     height: 100%;
     margin-top: 0;
     border-bottom-left-radius: 4.375rem;
-    background-image: url(/images/dsk-back.png);
+    background-image: url(https://raw.githubusercontent.com/steveWDamesJr/Microverse-Portfolio/main/images/Desktop-back.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -697,6 +713,11 @@ textarea {
   .works-section-grid {
     width: 100%;
     padding-bottom: 7.125rem;
+  }
+
+  .desk-languages {
+    display: inherit;
+    width: 27%;
   }
 
   .card {
@@ -724,9 +745,76 @@ textarea {
     padding-left: 36px;
   }
 
+  .card-title {
+    display: none;
+  }
+
+  .card-desk-title {
+    display: inherit;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #091e42;
+  }
+
+  .title-elements {
+    width: 66%;
+  }
+
+  .pr-name {
+    display: none;
+  }
+
+  .art-name {
+    display: none;
+  }
+
+  .pr-desk-name {
+    display: inherit;
+    font-weight: 500;
+    color: #344563;
+    font-size: 1.125rem;
+  }
+
+  .art-desk-name {
+    display: inherit;
+    font-weight: 400;
+    width: 8.8rem;
+    color: #6b778c;
+    font-size: 1.125rem;
+    text-align: center;
+  }
+
+  .year {
+    display: none;
+  }
+
+  .desk-year {
+    display: inherit;
+    font-weight: 400;
+    width: 2.375rem;
+    color: #6b778c;
+    font-size: 1.125rem;
+  }
+
   .card-description {
+    display: none;
+  }
+
+  .desk-card-des {
+    display: inherit;
     width: 80%;
     height: auto;
+  }
+
+  .card-subtitles {
+    gap: 0.5%;
+    width: 63%;
+    margin-bottom: 2rem;
+  }
+
+  .card-desk-sub {
+    width: 39%;
   }
 
   .program-lang {
@@ -757,6 +845,21 @@ textarea {
 
   .frame-arrow {
     padding-top: -5px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #344563;
+  }
+
+  .skills-arrow {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #344563;
+  }
+
+  .lang-arrow {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #344563;
   }
 
   .skills-container {
@@ -816,7 +919,7 @@ textarea {
     height: auto;
     padding: 0;
     margin: 0;
-    background-image: url(/images/contact-back.png);
+    background-image: url(https://raw.githubusercontent.com/steveWDamesJr/Microverse-Portfolio/Portfolio-desktop-version/images/contact-back.png);
   }
 
   .footer-connect-container {
@@ -827,6 +930,9 @@ textarea {
 
   .about-myself {
     padding-right: 0;
+    color: #091e42;
+    font-weight: 700;
+    font-size: 2.5rem;
   }
 
   .contact-description {
@@ -834,6 +940,8 @@ textarea {
     margin-right: auto;
     width: 28em;
     margin-bottom: 0;
+    font-weight: 400;
+    font-size: 1.25rem;
   }
 
   .frm-button {
@@ -843,51 +951,5 @@ textarea {
 
   .frm-inputs-cont {
     padding-bottom: 7.938rem;
-  }
-
-  /* Animations and Transitions for Exercise */
-
-  .logo-title {
-    color: #333;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.5s ease-out;
-  }
-
-  .hero-title-transition {
-    color: #333;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.5s ease-out;
-  }
-
-  .logo-title:hover,
-  .logo-title:focus {
-    background-color: #fff;
-    color: rgb(52, 159, 221);
-  }
-
-  .hero-title:hover,
-  .hero-title:focus {
-    background-color: #fff;
-    color: rgb(39, 141, 209);
-  }
-}
-
-.hero-title-animation {
-  animation-duration: 5s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
   }
 }
