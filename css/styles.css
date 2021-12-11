@@ -550,7 +550,7 @@ textarea {
   background: #fff;
   align-self: flex-start;
   justify-content: center;
-  margin-left: 20px;
+  margin-left: 1.25rem;
   margin-bottom: 7px;
   font-weight: 500;
   font-size: 17px;
@@ -576,6 +576,7 @@ textarea {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
+  cursor: pointer;
 }
 
 .frm-button:focus {
