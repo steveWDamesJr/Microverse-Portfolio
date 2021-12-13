@@ -6,12 +6,17 @@
 
 
 Additional description about the project and its features.
-![screenshot](./images/Microverse-Portf.png)
+![screenshot](./images/demo-pic.png)
 
 
 ## Built With
 
 - HTML | CSS
+
+
+## Live Demo
+
+[Live Demo Link](https://stevewdamesjr.github.io/Microverse-Portfolio/#)
 
 
 ## Getting Started
