@@ -6,7 +6,7 @@
 
 
 Additional description about the project and its features.
-![screenshot](./images/Microverse-Portf.png)
+![screenshot](./images/demo-pic.png)
 
 
 ## Built With
