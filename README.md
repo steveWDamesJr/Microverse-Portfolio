@@ -16,7 +16,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://stevewdamesjr.github.io/Microverse-Portfolio/#)
+[Live Demo Link](https://stevewdamesjr.github.io/Microverse-Portfolio/)
 
 
 ## Getting Started
