@@ -677,6 +677,10 @@ textarea {
     color: #344563;
   }
 
+  .dsk-nav-link a:hover {
+    color: #6070ff;
+  }
+
   .wrapper {
     min-width: 0;
     background-size: cover;
