@@ -22,30 +22,6 @@ img {
   max-width: 100%;
 }
 
-/* .header-container {
-  display: flex;
-  justify-content: space-between;
-  min-width: 100%;
-  background-color: #fff;
-  padding-top: 3.625em;
-} */
-
-/* .logo-title {
-  margin-left: 1.563em;
-  font-size: 1.125em;
-  font-weight: 700;
-  color: #6070ff;
-  text-decoration: none;
-} */
-
-/* .ham-img {
-  position: relative;
-  left: -2.188em;
-  height: 0.75rem;
-  color: #6070ff;
-  text-decoration: none;
-} */
-
 .hero-title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -600,10 +576,6 @@ textarea {
   color: #fff;
 }
 
-/* .dsk-nav {
-  display: none;
-} */
-
 .desk-card-img {
   display: none;
 }
@@ -637,7 +609,7 @@ textarea {
     background-image: url(https://raw.githubusercontent.com/steveWDamesJr/Microverse-Portfolio/main/images/Desktop-back.png);
     width: 100%;
     padding: 0;
-    margin: 47px 0 0 0;
+    margin: 0;
     background-color: #f7f7f9;
     border-bottom-left-radius: 0;
   }
@@ -654,36 +626,6 @@ textarea {
     overflow: hidden;
     background-color: #fff;
   }
-
-  /* .nav-links a {
-    text-decoration: none;
-    color: #344563;
-  } */
-
-  /* .ham-img {
-    display: none;
-  } */
-
-  /* .dsk-nav {
-    display: inherit;
-  } */
-
-  /* .dsk-nav-link {
-    display: flex;
-    padding-right: 14em;
-  } */
-
-  /* .nav-links {
-    list-style: none;
-    margin-right: 1em;
-    font-weight: 500;
-    font-size: 0.938em;
-    color: #344563;
-  } */
-
-  /* .dsk-nav-link a:hover {
-    color: #6070ff;
-  } */
 
   .wrapper {
     min-width: 0;
@@ -966,10 +908,6 @@ header {
   background-color: #262626;
 }
 
-/* li {
-  list-style: none;
-} */
-
 a {
   color: black;
   text-decoration: none;
@@ -997,6 +935,7 @@ a {
   justify-content: space-between;
   align-items: start;
   gap: 60px;
+  padding-right: 135px;
 }
 
 .nav-link {
@@ -1005,7 +944,8 @@ a {
 }
 
 .nav-link:hover {
-  color: #6070ff;
+  color: #919aee;
+  cursor: pointer;
 }
 
 .hamburger {
@@ -1015,12 +955,13 @@ a {
 
 .bar {
   display: block;
-  width: 25px;
-  height: 3px;
+  width: 24px;
+  height: 2.5px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: #6070ff;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1031,6 +972,12 @@ a {
 
   .hamburger {
     display: block;
+    left: 88%;
+    color: #fff;
+  }
+
+  .hamburger.active .bar {
+    background: #fff;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -1047,7 +994,7 @@ a {
 
   .nav-menu {
     position: absolute;
-    left: -300%;
+    left: -457%;
     top: -33px;
     padding-top: 68px;
     gap: 0;
@@ -1057,7 +1004,7 @@ a {
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    padding-bottom: 200%;
+    padding-bottom: 2000%;
     mix-blend-mode: multiply;
     font-weight: 600;
     font-size: 32px;
