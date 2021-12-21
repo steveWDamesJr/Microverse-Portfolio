@@ -26,25 +26,30 @@
 </head>
 
 <body>
+  <header>
+    <nav class="navbar">
+      <a href="#homepage-section" class="nav-branding">My Logo</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#works-section" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about-me-section" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact-me-section" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
   <main class="wrapper">
-    <header class="header-container">
-      <a class="logo-title" href="#">My Logo</a>
-      <nav>
-        <a href="#"><img class="ham-img" src="./images/ham-menu.png" alt="Menu"></a>
-      </nav>
-      <nav class="dsk-nav">
-        <ul class="dsk-nav-link">
-          <li class="nav-links"><a href="#homepage-section">Portfolio</a></li>
-          <li class="nav-links"><a href="#about-me-section">About</a></li>
-          <li class="nav-links"><a href="#contact-me-section">Contact</a></li>
-        </ul>
 
-      </nav>
-
-    </header>
-
-    <section class="Homepage">
-      <a id="homepage-section"></a>
+    <section class="Homepage" id="homepage-section">
       <div class="home-wrapper">
         <div class="hom-container">
           <h1 class="hero-title">I’m Steve <br>
@@ -65,7 +70,7 @@
       </div>
     </section>
 
-    <section class="works-section-grid">
+    <section class="works-section-grid" id="works-section">
 
       <section class="card">
         <img class="desk-card-img" src="./images/desk-snap-4.png" alt="Desktop Tonic Project">
@@ -219,8 +224,7 @@
       </section>
     </section>
 
-    <section class="about-me-card">
-      <a id="about-me-section"></a>
+    <section class="about-me-card" id="about-me-section">
       <div class="about-me-connect-container">
         <div class="about-back-container">
           <div class="about-me-container">
@@ -284,8 +288,7 @@
       </div>
     </section>
 
-    <footer class="con-form-wrapper">
-      <a id="contact-me-section"></a>
+    <footer class="con-form-wrapper" id="contact-me-section">
       <div class="footer-connect-container">
         <div class="contact-form">
           <h2 class="contact-me">Contact me</h2>
@@ -312,6 +315,8 @@
     </footer>
 
   </main>
+
+  <script src="./js/app.js"></script> 
 </body>
 
 </html>
