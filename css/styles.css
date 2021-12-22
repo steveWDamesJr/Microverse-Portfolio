@@ -1020,3 +1020,7 @@ a {
     left: 0;
   }
 }
+
+.works-section-popup {
+  display: none;
+}
