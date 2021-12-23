@@ -1,6 +1,9 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const portfolioJs = document.querySelector('#portfolioJs');
+const popWindow = document.querySelector('.works-section-popup');
+
+popWindow.style.display = 'none';
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
@@ -81,7 +84,7 @@ for (let i = 0; i < workObject.length; i += 1) {
                 <li>${allWork.languages[1]}</li>
                 <li>${allWork.languages[2]}</li>
             </ul>
-            <button data-popup-ref="myPopup">See project</button>
+            <button data-popup-ref="myPopup" class="data-popup-ref">See project</button>
       </div>
   `;
 }
@@ -117,3 +120,22 @@ popupsBtn.forEach((btn) => {
     }
   });
 });
+
+const appbtn = document.querySelectorAll('.data-popup-ref');
+const wrapper = document.querySelector('.wrapper');
+const popClose = document.querySelector('.popup-close');
+
+
+function openModal(){
+  wrapper.style.display ='none';
+  popWindow.style.display ='inherit';
+}
+appbtn.forEach((appbtn) => {
+  appbtn.addEventListener('click', openModal);
+});
+
+function closeModal(){
+  wrapper.style.display ='inherit';
+  popWindow.style.display ='none';
+}
+popClose.addEventListener('click', closeModal);
