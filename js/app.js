@@ -1,6 +1,9 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const portfolioJs = document.querySelector('#portfolioJs');
+const popWindow = document.querySelector('.works-section-popup');
+
+popWindow.style.display = 'none';
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
@@ -81,7 +84,58 @@ for (let i = 0; i < workObject.length; i += 1) {
                 <li>${allWork.languages[1]}</li>
                 <li>${allWork.languages[2]}</li>
             </ul>
-            <button data-popup-ref="myPopup">See project</button>
+            <button data-popup-ref="myPopup" class="data-popup-ref">See project</button>
       </div>
   `;
 }
+
+const popupsBtn = document.querySelectorAll('[data-popup-ref]');
+
+popupsBtn.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const popupId = btn.getAttribute('data-popup-ref');
+    const popup = document.querySelector(`[data-popup-id='${popupId}']`);
+
+    if (popup !== undefined && popup !== null) {
+      const popupContent = popup.querySelector('.popup-content');
+      const closeBtns = popup.querySelectorAll('[data-dismiss-popup]');
+
+      closeBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          setTimeout(() => {
+            popup.classList.remove('active');
+          }, 250);
+          popupContent.classList.remove('active');
+        });
+      });
+
+      popupContent.addEventListener('click', (ev) => {
+        ev.stopPropagation();
+      });
+
+      popup.classList.add('active');
+      setTimeout(() => {
+        popupContent.classList.add('active');
+      }, 1);
+    }
+  });
+});
+
+const appbtn = document.querySelectorAll('.data-popup-ref');
+const wrapper = document.querySelector('.wrapper');
+const popClose = document.querySelector('.popup-close');
+
+
+function openModal(){
+  wrapper.style.display ='none';
+  popWindow.style.display ='inherit';
+}
+appbtn.forEach((appbtn) => {
+  appbtn.addEventListener('click', openModal);
+});
+
+function closeModal(){
+  wrapper.style.display ='inherit';
+  popWindow.style.display ='none';
+}
+popClose.addEventListener('click', closeModal);
