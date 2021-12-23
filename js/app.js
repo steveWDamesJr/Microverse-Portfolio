@@ -2,6 +2,7 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const portfolioJs = document.querySelector('#portfolioJs');
 const popWindow = document.querySelector('.works-section-popup');
+const worksSection = document.querySelector('#works-section');
 
 popWindow.style.display = 'none';
 
@@ -20,44 +21,68 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 const workObject = [{
   id: 1,
   workCardTitle: 'Tonic',
-  images: './images/popup-tonic-mobile.png',
+  imagesMobile: './images/popup-tonic-mobile.png',
+  imagesDesk: './images/desk-snap-4.png',
   imageAlt: 'Tonic Project',
-  titleElements: ['CANOPY', 'Back End Dev', '2015'],
-  cardDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  languages: ['html', 'css', 'javaScript'],
+  cardTitleMo: 'Tonic',
+  cardTitleDesk: 'Tonic',
+  titleElementsMo: ['CANOPY', 'Back End Dev', '2015'],
+  titleElementsDesk: ['CANOPY', 'Back End Dev', '2015'],
+  cardDescriptionMo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  cardDescriptionDesk: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  languagesMo: ['html', 'css', 'javaScript'],
+  languagesDesk: ['html', 'css', 'javaScript'],
   liveBtn: '#',
   sourceBtn: '#'
 },
 {
   id: 2,
   workCardTitle: 'Multi-Post Stories',
-  images: './images/mps1.png',
+  imagesMobile: './images/mps1.png',
+  imagesDesk: './images/desk-snap-1.png',
   imageAlt: 'Multi-Post Project 1',
-  titleElements: ['CANOPY', 'Back End Dev', '2015'],
-  cardDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  languages: ['html', 'css', 'javaScript'],
+  cardTitleMo: 'Multi-Post Stories',
+  cardTitleDesk: 'Multi-Post Stories',
+  titleElementsMo: ['CANOPY', 'Back End Dev', '2015'],
+  titleElementsDesk: ['FACEBOOK', 'Full Stack Dev', '2015'],
+  cardDescriptionMo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  cardDescriptionDesk: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+  languagesMo: ['html', 'css', 'javaScript'],
+  languagesDesk: ['html', 'Ruby on rails', 'css', 'javaScript'],
   liveBtn: '#',
   sourceBtn: '#'
 },
 {
   id: 3,
   workCardTitle: 'Tonic',
-  images: './images/Tonic2.png',
+  imagesMobile: './images/Tonic2.png',
+  imagesDesk: './images/desk-snap-2.png',
   imageAlt: 'Tonic Project 2',
-  titleElements: ['CANOPY', 'Back End Dev', '2015'],
-  cardDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  languages: ['html', 'css', 'javaScript'],
+  cardTitleMo: 'Tonic',
+  cardTitleDesk: 'Facebook 360',
+  titleElementsMo: ['CANOPY', 'Back End Dev', '2015'],
+  titleElementsDesk: ['FACEBOOK', 'Full Stack Dev', '2015'],
+  cardDescriptionMo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  cardDescriptionDesk: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+  languagesMo: ['html', 'css', 'javaScript'],
+  languagesDesk: ['html', 'Ruby on rails', 'css', 'javaScript'],
   liveBtn: '#',
   sourceBtn: '#'
 },
 {
   id: 4,
   workCardTitle: 'Multi-Post Stories',
-  images: './images/mps2.png',
+  imagesMobile: './images/mps2.png',
+  imagesDesk: '/images/desk-snap-3.png',
   imageAlt: 'Multi-Post Project 2',
-  titleElements: ['CANOPY', 'Back End Dev', '2015'],
-  cardDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  languages: ['html', 'css', 'javaScript'],
+  cardTitleMo: 'Multi-Post Stories',
+  cardTitleDesk: 'Uber Navigation',
+  titleElementsMo: ['CANOPY', 'Back End Dev', '2015'],
+  titleElementsDesk: ['UBER', 'Lead Developer', '2018'],
+  cardDescriptionMo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  cardDescriptionDesk: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+  languagesMo: ['html', 'css', 'javaScript'],
+  languagesDesk: ['html', 'css', 'javaScript'],
   liveBtn: '#',
   sourceBtn: '#'
 },
@@ -65,61 +90,54 @@ const workObject = [{
 
 for (let i = 0; i < workObject.length; i += 1) {
   const allWork = workObject[i];
+  const section = document.createElement('section');
+  section.setAttribute('class', 'card');
 
-  portfolioJs.innerHTML += `
-      <div class="card-img card-1" id="btn-${allWork.id}">
-        <img src="${allWork.images}" alt="${allWork.imageAlt}">
-        <div class="details">
-            <h2>${allWork.workCardTitle}</h2>
-            <div class="popup-pr-name">
-                <h4>${allWork.languages[0]}</h4>
-                <ul>
-                    <li>${allWork.languages[1]}</li>
-                    <li>${allWork.languages[2]}</li>
-                </ul>
-            </div>
-            <p class="card-descript">${allWork.cardDescription}</p>
-            <ul class="languages">
-                <li>${allWork.languages[0]}</li>
-                <li>${allWork.languages[1]}</li>
-                <li>${allWork.languages[2]}</li>
-            </ul>
-            <button data-popup-ref="myPopup" class="data-popup-ref">See project</button>
-      </div>
+  worksSection.innerHTML += `
+  
+  
+  <section class="card">
+  <img class="desk-card-img" src="${allWork.imagesDesk}" alt="Desktop Tonic Project">
+  <img class="card-img" src="${allWork.imagesMobile}" alt="Tonic Project 1">
+  <div class="text-cont">
+    <h2 class="card-title">Tonic</h2>
+    <h2 class="card-desk-title">Tonic</h2>
+    <ul class="title-elements">
+      <li>
+        <p class="pr-name">CANOPY</p>
+        <p class="pr-desk-name">CANOPY</p>
+      </li>
+      <li><img class="dot" src="./images/dot.png" alt="stylistic text divider dot"></li>
+      <li>
+        <p class="art-name">Back End Dev</p>
+        <p class="art-desk-name">Back End Dev</p>
+      </li>
+      <li><img class="dot" src="./images/dot.png" alt="stylistic text divider dot"></li>
+      <li>
+        <p class="year">2015</p>
+        <p class="desk-year">2015</p>
+      </li>
+    </ul>
+
+    <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups
+      required.</p>
+    <p class="card-description desk-card-des">A daily selection of privately personalized reads; no accounts or
+      sign-ups required.</p>
+    <ul class="card-subtitles card-desk-sub">
+      <li class="languages">html</li>
+      <li class="languages">css</li>
+      <li class="languages">javaScript</li>
+    </ul>
+
+    <a class="card-button data-popup-ref" href="#">See Project</a>
+  </div>
+</section> 
+
+  
   `;
+  console.log('hello-world');
+  // worksSection.appendChild('section');
 }
-
-const popupsBtn = document.querySelectorAll('[data-popup-ref]');
-
-popupsBtn.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const popupId = btn.getAttribute('data-popup-ref');
-    const popup = document.querySelector(`[data-popup-id='${popupId}']`);
-
-    if (popup !== undefined && popup !== null) {
-      const popupContent = popup.querySelector('.popup-content');
-      const closeBtns = popup.querySelectorAll('[data-dismiss-popup]');
-
-      closeBtns.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          setTimeout(() => {
-            popup.classList.remove('active');
-          }, 250);
-          popupContent.classList.remove('active');
-        });
-      });
-
-      popupContent.addEventListener('click', (ev) => {
-        ev.stopPropagation();
-      });
-
-      popup.classList.add('active');
-      setTimeout(() => {
-        popupContent.classList.add('active');
-      }, 1);
-    }
-  });
-});
 
 const appbtn = document.querySelectorAll('.data-popup-ref');
 const wrapper = document.querySelector('.wrapper');
