@@ -85,35 +85,3 @@ for (let i = 0; i < workObject.length; i += 1) {
       </div>
   `;
 }
-
-const popupsBtn = document.querySelectorAll('[data-popup-ref]');
-
-popupsBtn.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const popupId = btn.getAttribute('data-popup-ref');
-    const popup = document.querySelector(`[data-popup-id='${popupId}']`);
-
-    if (popup !== undefined && popup !== null) {
-      const popupContent = popup.querySelector('.popup-content');
-      const closeBtns = popup.querySelectorAll('[data-dismiss-popup]');
-
-      closeBtns.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          setTimeout(() => {
-            popup.classList.remove('active');
-          }, 250);
-          popupContent.classList.remove('active');
-        });
-      });
-
-      popupContent.addEventListener('click', (ev) => {
-        ev.stopPropagation();
-      });
-
-      popup.classList.add('active');
-      setTimeout(() => {
-        popupContent.classList.add('active');
-      }, 1);
-    }
-  });
-});
