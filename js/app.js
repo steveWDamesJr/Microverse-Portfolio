@@ -1,6 +1,5 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
-const portfolioJs = document.querySelector('#portfolioJs');
 const popWindow = document.querySelector('.works-section-popup');
 const worksSection = document.querySelector('#works-section');
 
@@ -15,8 +14,6 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   hamburger.classList.remove('active');
   navMenu.classList.remove('active');
 }));
-
-//Dynamic Work-card Information
 
 const workObject = [{
   id: 1,
@@ -95,7 +92,6 @@ for (let i = 0; i < workObject.length; i += 1) {
 
   worksSection.innerHTML += `
   
-  
   <section class="card">
   <img class="desk-card-img" src="${allWork.imagesDesk}" alt="Desktop Tonic Project">
   <img class="card-img" src="${allWork.imagesMobile}" alt="Tonic Project 1">
@@ -134,14 +130,10 @@ for (let i = 0; i < workObject.length; i += 1) {
 </section>
 
   `;
-  console.log('hello-world');
-  // worksSection.appendChild('section');
-}
 
 const appbtn = document.querySelectorAll('.data-popup-ref');
 const wrapper = document.querySelector('.wrapper');
 const popClose = document.querySelector('.popup-close');
-
 
 function openModal(){
   wrapper.style.display ='none';
@@ -157,10 +149,6 @@ function closeModal(){
 }
 popClose.addEventListener('click', closeModal);
 
-
-
-//Email Form Validation 
-
 const eForm = document.getElementById('fs-frm');
 const clientMail = document.getElementById('email');
 const emailMsg = document.getElementById('email-msg');
@@ -171,4 +159,4 @@ eForm.addEventListener('submit', (e) => {
   }else {e.preventDefault(); }
   emailMsg.innerHTML = '*Please enter correct email in lower case';
   emailMsg.style.color = 'red';
-});
+})};
