@@ -73,7 +73,7 @@ const workObject = [{
   id: 4,
   workCardTitle: 'Multi-Post Stories',
   imagesMobile: './images/mps2.png',
-  imagesDesk: '/images/desk-snap-3.png',
+  imagesDesk: './images/desk-snap-3.png',
   imageAlt: 'Multi-Post Project 2',
   cardTitleMo: 'Multi-Post Stories',
   cardTitleDesk: 'Uber Navigation',
@@ -156,3 +156,31 @@ function closeModal(){
   popWindow.style.display ='none';
 }
 popClose.addEventListener('click', closeModal);
+
+
+
+//Email Form Validation 
+
+const eForm = document.querySelector('#fs-frm');
+const clientMail = document.querySelector("input[name='email']");
+const emailMsg = document.getElementById('email-msg');
+
+const isValidEmail = (email) => {
+  if (email !== email.toLowerCase()) {
+    emailMsg.innerHTML = 'Please enter a valid email All lowercase letters.';
+    emailMsg.style.color = 'red';
+    clientMail.style.border = '1px solid red';
+    return false;
+  }
+  return true;
+};
+
+function validateForm(e) {
+  e.preventDefault();
+  const email = clientMail.value;
+  if (isValidEmail(email)) {
+    eForm.submit();
+  }
+}
+
+eForm.addEventListener('submit', validateForm);
