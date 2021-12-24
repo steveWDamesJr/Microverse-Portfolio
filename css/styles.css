@@ -612,7 +612,15 @@ textarea {
   display: none;
 }
 
+.hideMe {
+  display: none;
+}
+
 @media screen and (min-width: 993px) {
+  .hideMe {
+    display: inherit;
+  }
+
   .Homepage {
     background-image: url(https://raw.githubusercontent.com/steveWDamesJr/Microverse-Portfolio/main/images/Desktop-back.png);
     width: 100%;
@@ -716,7 +724,7 @@ textarea {
   }
 
   .title-elements {
-    width: 66%;
+    width: 28%;
   }
 
   .pr-name {
@@ -914,6 +922,8 @@ textarea {
   .works-section-popup {
     background: #c1c7d0;
     height: 200%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .popup-languages {
@@ -944,6 +954,11 @@ textarea {
 
   .popup-work-descript {
     display: none;
+  }
+
+  .lang-width {
+    width: 59%;
+    margin-right: 4%;
   }
 }
 
@@ -1032,7 +1047,6 @@ a {
 
 .popup-desk-container {
   padding: 30px;
-  border: 1px solid red;
 }
 
 .popup-card {

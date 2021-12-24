@@ -31,7 +31,7 @@ const workObject = [{
   cardDescriptionMo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   cardDescriptionDesk: ['A daily selection of privately personalized reads; no accounts or sign-ups required.','Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.'],
   languagesMo: ['html', 'css', 'javaScript'],
-  languagesDesk: ['html', 'css', 'javaScript'],
+  languagesDesk: ['html','Ruby on rails', 'css', 'javaScript'],
   liveBtn: '#',
   sourceBtn: '#'
 },
@@ -48,7 +48,7 @@ const workObject = [{
   cardDescriptionMo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   cardDescriptionDesk: ['Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.','A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.'],
   languagesMo: ['html', 'css', 'javaScript'],
-  languagesDesk: ['html', 'Ruby on rails', 'css', 'javaScript'],
+  languagesDesk: ['html','Ruby on rails','css', 'javaScript'],
   liveBtn: '#',
   sourceBtn: '#'
 },
@@ -91,8 +91,9 @@ for (let i= 0;  i < 1; i++) {
   
     <ul class="card-subtitles card-desk-sub">
       <li class="languages">${allWork.languagesDesk[i]}</li>
-      <li class="languages">${allWork.languagesDesk[i+1]}</li>
       <li class="languages">${allWork.languagesDesk[i+2]}</li>
+      <li class="languages">${allWork.languagesDesk[i+3]}</li>
+    
       
       
     </ul>
@@ -126,10 +127,11 @@ for (let i= 0;  i < 1; i++) {
 
     <p class="card-description">${allWork.cardDescriptionMo}</p>
     <p class="card-description desk-card-des">${allWork.cardDescriptionDesk[i+1]}</p>
-    <ul class="card-subtitles card-desk-sub">
+    <ul class="card-subtitles card-desk-sub lang-width">
     <li class="languages">${allWork.languagesDesk[i]}</li>
-    <li class="languages">${allWork.languagesDesk[i+1]}</li>
+    <li class="languages hideMe">${allWork.languagesDesk[i+1]}</li>
     <li class="languages">${allWork.languagesDesk[i+2]}</li>
+    <li class="languages">${allWork.languagesDesk[i+3]}</li>
     
   </ul>
 
