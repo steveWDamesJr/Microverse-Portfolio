@@ -161,22 +161,14 @@ popClose.addEventListener('click', closeModal);
 
 //Email Form Validation 
 
-const eForm = document.querySelector('#fs-frm');
-const clientMail = document.querySelector("input[name='email']");
+const eForm = document.getElementById('fs-frm');
+const clientMail = document.getElementById('email');
 const emailMsg = document.getElementById('email-msg');
 
-const isValidEmail = (email) => {
-  if (email !== email.toLowerCase()) {
-    emailMsg.innerHTML = '';
-    emailMsg.style.color = 'red';
-    clientMail.style.border = '1px solid red';
-    return false;
-  }
-  return true;
-};
-
-function validateForm(e) {
-  
-}
-
-eForm.addEventListener('submit', validateForm);
+eForm.addEventListener('submit', (e) => {
+  if(clientMail.value === clientMail.value.toLowerCase()){
+    emailMsg.style.display = 'none';
+  }else {e.preventDefault(); }
+  emailMsg.innerHTML = '*Please enter correct email in lower case';
+  emailMsg.style.color = 'red';
+});
