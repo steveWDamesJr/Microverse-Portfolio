@@ -167,7 +167,7 @@ const emailMsg = document.getElementById('email-msg');
 
 const isValidEmail = (email) => {
   if (email !== email.toLowerCase()) {
-    emailMsg.innerHTML = 'Please enter a valid email All lowercase letters.';
+    emailMsg.innerHTML = '';
     emailMsg.style.color = 'red';
     clientMail.style.border = '1px solid red';
     return false;
@@ -176,11 +176,7 @@ const isValidEmail = (email) => {
 };
 
 function validateForm(e) {
-  e.preventDefault();
-  const email = clientMail.value;
-  if (isValidEmail(email)) {
-    eForm.submit();
-  }
+  
 }
 
 eForm.addEventListener('submit', validateForm);
