@@ -1,6 +1,5 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
-const portfolioJs = document.querySelector('#portfolioJs');
 const popWindow = document.querySelector('.works-section-popup');
 const worksSection = document.querySelector('#works-section');
 
@@ -15,8 +14,6 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   hamburger.classList.remove('active');
   navMenu.classList.remove('active');
 }));
-
-//Dynamic Work-card Information
 
 const workObject = [{
   id: 1,
@@ -56,11 +53,11 @@ const workObject = [{
 
 for (let i= 0;  i < 1; i++) {
   for (let j= 0;  j < workObject.length; j++) {
+    const allWork = workObject[j];
     const section = document.createElement('section');
     section.setAttribute('class', 'card');
-    
+
     worksSection.innerHTML += `
-    const allWork = workObject[j];
   
   
   <section class="card">
