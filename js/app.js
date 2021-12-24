@@ -18,47 +18,46 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 const workObject = [{
   id: 1,
   workCardTitle: 'Tonic',
-  imagesMobile: ['./images/popup-tonic-mobile.png','./images/mps1.png'],
-  imagesDesk: ['./images/desk-snap-4.png','./images/desk-snap-1.png'],
+  imagesMobile: ['./images/popup-tonic-mobile.png', './images/mps1.png'],
+  imagesDesk: ['./images/desk-snap-4.png', './images/desk-snap-1.png'],
   imageAlt: 'Tonic Project',
-  cardTitleMo: ['Tonic','Multi-Post Stories'],
-  cardTitleDesk: ['Tonic','Multi-Post Stories'],
+  cardTitleMo: ['Tonic', 'Multi-Post Stories'],
+  cardTitleDesk: ['Tonic', 'Multi-Post Stories'],
   titleElementsMo: ['CANOPY', 'Back End Dev', '2015'],
   titleElementsDesk: ['CANOPY', 'Back End Dev', '2015', 'FACEBOOK', 'Full Stack Dev', '2015'],
   cardDescriptionMo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   cardDescriptionDesk: ['A daily selection of privately personalized reads; no accounts or sign-ups required.','Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.'],
   languagesMo: ['html', 'css', 'javaScript'],
-  languagesDesk: ['html','Ruby on rails', 'css', 'javaScript'],
+  languagesDesk: ['html', 'Ruby on rails', 'css', 'javaScript'],
   liveBtn: '#',
   sourceBtn: '#'
 },
  {
   id: 2,
   workCardTitle: 'Multi-Post Stories',
-  imagesMobile: ['./images/Tonic2.png','./images/mps2.png'],
-  imagesDesk: ['./images/desk-snap-2.png','./images/desk-snap-3.png'],
+  imagesMobile: ['./images/Tonic2.png', './images/mps2.png'],
+  imagesDesk: ['./images/desk-snap-2.png', './images/desk-snap-3.png'],
   imageAlt: 'Multi-Post Project 1',
-  cardTitleMo: ['Tonic','Multi-Post Stories'],
-  cardTitleDesk: ['Facebook 360','Uber Navigation'],
+  cardTitleMo: ['Tonic', 'Multi-Post Stories'],
+  cardTitleDesk: ['Facebook 360', 'Uber Navigation'],
   titleElementsMo: ['CANOPY', 'Back End Dev', '2015'],
   titleElementsDesk: ['FACEBOOK', 'Full Stack Dev', '2015', 'UBER', 'Lead Developer', '2018'],
   cardDescriptionMo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  cardDescriptionDesk: ['Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.','A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.'],
+  cardDescriptionDesk: ['Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.', 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.'],
   languagesMo: ['html', 'css', 'javaScript'],
-  languagesDesk: ['html','Ruby on rails','css', 'javaScript'],
+  languagesDesk: ['html', 'Ruby on rails', 'css', 'javaScript'],
   liveBtn: '#',
   sourceBtn: '#'
 },
 ];
 
-for (let i= 0;  i < 1; i++) {
-  for (let j= 0;  j < workObject.length; j++) {
+for (let i= 0;  i < 1; i += 1) {
+  for (let j= 0;  j < workObject.length; j += 1) {
     const allWork = workObject[j];
     const section = document.createElement('section');
     section.setAttribute('class', 'card');
 
     worksSection.innerHTML += `
-  
   
   <section class="card">
   <img class="desk-card-img" src=${allWork.imagesDesk[i]} alt="Desktop Tonic Project">
@@ -74,7 +73,7 @@ for (let i= 0;  i < 1; i++) {
       <li><img class="dot" src="./images/dot.png" alt="stylistic text divider dot"></li>
       <li>
         <p class="art-name">${allWork.titleElementsMo[1]}</p>
-        <p class="art-desk-name">${allWork.titleElementsDesk[i+1]}</p>
+        <p class="art-desk-name">${allWork.titleElementsDesk[i + 1]}</p>
       </li>
       <li><img class="dot" src="./images/dot.png" alt="stylistic text divider dot"></li>
       <li>
@@ -104,7 +103,7 @@ for (let i= 0;  i < 1; i++) {
   <img class="card-img" src="${allWork.imagesMobile[i + 1]}" alt="Tonic Project 1">
   <div class="text-cont">
     <h2 class="card-title">${allWork.cardTitleMo[i + 1]}</h2>
-    <h2 class="card-desk-title">${allWork.cardTitleDesk[i+1]}</h2>
+    <h2 class="card-desk-title">${allWork.cardTitleDesk[i + 1]}</h2>
     <ul class="title-elements">
       <li>
         <p class="pr-name">${allWork.titleElementsMo[0]}</p>
@@ -123,7 +122,7 @@ for (let i= 0;  i < 1; i++) {
     </ul>
 
     <p class="card-description">${allWork.cardDescriptionMo}</p>
-    <p class="card-description desk-card-des">${allWork.cardDescriptionDesk[i+1]}</p>
+    <p class="card-description desk-card-des">${allWork.cardDescriptionDesk[i + 1]}</p>
     <ul class="card-subtitles card-desk-sub lang-width">
     <li class="languages">${allWork.languagesDesk[i]}</li>
     <li class="languages hideMe">${allWork.languagesDesk[i + 1]}</li>
