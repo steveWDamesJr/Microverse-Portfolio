@@ -26,13 +26,13 @@ const workObject = [{
   titleElementsMo: ['CANOPY', 'Back End Dev', '2015'],
   titleElementsDesk: ['CANOPY', 'Back End Dev', '2015', 'FACEBOOK', 'Full Stack Dev', '2015'],
   cardDescriptionMo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  cardDescriptionDesk: ['A daily selection of privately personalized reads; no accounts or sign-ups required.','Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.'],
+  cardDescriptionDesk: ['A daily selection of privately personalized reads; no accounts or sign-ups required.', 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.'],
   languagesMo: ['html', 'css', 'javaScript'],
   languagesDesk: ['html', 'Ruby on rails', 'css', 'javaScript'],
   liveBtn: '#',
-  sourceBtn: '#'
+  sourceBtn: '#',
 },
- {
+{
   id: 2,
   workCardTitle: 'Multi-Post Stories',
   imagesMobile: ['./images/Tonic2.png', './images/mps2.png'],
@@ -47,12 +47,12 @@ const workObject = [{
   languagesMo: ['html', 'css', 'javaScript'],
   languagesDesk: ['html', 'Ruby on rails', 'css', 'javaScript'],
   liveBtn: '#',
-  sourceBtn: '#'
+  sourceBtn: '#',
 },
 ];
 
-for (let i= 0;  i < 1; i += 1) {
-  for (let j= 0;  j < workObject.length; j += 1) {
+for (let i = 0; i < 1; i += 1) {
+  for (let j = 0; j < workObject.length; j += 1) {
     const allWork = workObject[j];
     const section = document.createElement('section');
     section.setAttribute('class', 'card');
