@@ -143,17 +143,17 @@ const appbtn = document.querySelectorAll('.data-popup-ref');
 const wrapper = document.querySelector('.wrapper');
 const popClose = document.querySelector('.popup-close');
 
-function openModal(){
-  wrapper.style.display ='none';
-  popWindow.style.display ='inherit';
+function openModal() {
+  wrapper.style.display = 'none';
+  popWindow.style.display = 'inherit';
 }
 appbtn.forEach((appbtn) => {
   appbtn.addEventListener('click', openModal);
 });
 
-function closeModal(){
-  wrapper.style.display ='inherit';
-  popWindow.style.display ='none';
+function closeModal() {
+  wrapper.style.display = 'inherit';
+  popWindow.style.display = 'none';
 }
 popClose.addEventListener('click', closeModal);
 
@@ -162,10 +162,9 @@ const clientMail = document.getElementById('email');
 const emailMsg = document.getElementById('email-msg');
 
 eForm.addEventListener('submit', (e) => {
-  if(clientMail.value === clientMail.value.toLowerCase()){
+  if (clientMail.value === clientMail.value.toLowerCase()) {
     emailMsg.style.display = 'none';
-  }else {e.preventDefault(); }
+  } else { e.preventDefault(); }
   emailMsg.innerHTML = '*Please enter correct email in lower case';
   emailMsg.style.color = 'red';
-})
-
+});
