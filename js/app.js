@@ -137,8 +137,6 @@ for (let i= 0;  i < 1; i++) {
   <img class="desk-card-img" src="${allWork.imagesDesk[i+1]}" alt="Desktop Tonic Project">
 </section>
   `;
-  console.log('hello-world');
-  // worksSection.appendChild('section');
 }
 }
 
