@@ -100,22 +100,22 @@ for (let i = 0; i < workObject.length; i += 1) {
   <img class="desk-card-img" src="${allWork.imagesDesk}" alt="Desktop Tonic Project">
   <img class="card-img" src="${allWork.imagesMobile}" alt="Tonic Project 1">
   <div class="text-cont">
-    <h2 class="card-title">Tonic</h2>
-    <h2 class="card-desk-title">Tonic</h2>
+    <h2 class="card-title">${allWork.cardTitleMo}</h2>
+    <h2 class="card-desk-title">${allWork.cardTitleDesk}</h2>
     <ul class="title-elements">
       <li>
-        <p class="pr-name">CANOPY</p>
-        <p class="pr-desk-name">CANOPY</p>
+        <p class="pr-name">${allWork.titleElementsMo[0]}</p>
+        <p class="pr-desk-name">${allWork.titleElementsDesk[0]}</p>
       </li>
       <li><img class="dot" src="./images/dot.png" alt="stylistic text divider dot"></li>
       <li>
-        <p class="art-name">Back End Dev</p>
-        <p class="art-desk-name">Back End Dev</p>
+        <p class="art-name">${allWork.titleElementsMo[1]}</p>
+        <p class="art-desk-name">${allWork.titleElementsDesk[1]}</p>
       </li>
       <li><img class="dot" src="./images/dot.png" alt="stylistic text divider dot"></li>
       <li>
-        <p class="year">2015</p>
-        <p class="desk-year">2015</p>
+        <p class="year">${allWork.titleElementsMo[2]}</p>
+        <p class="desk-year">${allWork.titleElementsDesk[2]}</p>
       </li>
     </ul>
 
@@ -131,9 +131,8 @@ for (let i = 0; i < workObject.length; i += 1) {
 
     <a class="card-button data-popup-ref" href="#">See Project</a>
   </div>
-</section> 
+</section>
 
-  
   `;
   console.log('hello-world');
   // worksSection.appendChild('section');
