@@ -56,11 +56,11 @@ const workObject = [{
 
 for (let i= 0;  i < 1; i++) {
   for (let j= 0;  j < workObject.length; j++) {
-  const allWork = workObject[j];
-  const section = document.createElement('section');
-  section.setAttribute('class', 'card');
-
-  worksSection.innerHTML += `
+    const section = document.createElement('section');
+    section.setAttribute('class', 'card');
+    
+    worksSection.innerHTML += `
+    const allWork = workObject[j];
   
   
   <section class="card">
@@ -82,7 +82,7 @@ for (let i= 0;  i < 1; i++) {
       <li><img class="dot" src="./images/dot.png" alt="stylistic text divider dot"></li>
       <li>
         <p class="year">${allWork.titleElementsMo[2]}</p>
-        <p class="desk-year">${allWork.titleElementsDesk[i+2]}</p>
+        <p class="desk-year">${allWork.titleElementsDesk[i + 2]}</p>
       </li>
     </ul>
 
@@ -91,8 +91,8 @@ for (let i= 0;  i < 1; i++) {
   
     <ul class="card-subtitles card-desk-sub">
       <li class="languages">${allWork.languagesDesk[i]}</li>
-      <li class="languages">${allWork.languagesDesk[i+2]}</li>
-      <li class="languages">${allWork.languagesDesk[i+3]}</li>
+      <li class="languages">${allWork.languagesDesk[i + 2]}</li>
+      <li class="languages">${allWork.languagesDesk[i + 3]}</li>
     
       
       
@@ -104,24 +104,24 @@ for (let i= 0;  i < 1; i++) {
 
 <section class="card">
   
-  <img class="card-img" src="${allWork.imagesMobile[i+1]}" alt="Tonic Project 1">
+  <img class="card-img" src="${allWork.imagesMobile[i + 1]}" alt="Tonic Project 1">
   <div class="text-cont">
-    <h2 class="card-title">${allWork.cardTitleMo[i+1]}</h2>
+    <h2 class="card-title">${allWork.cardTitleMo[i + 1]}</h2>
     <h2 class="card-desk-title">${allWork.cardTitleDesk[i+1]}</h2>
     <ul class="title-elements">
       <li>
         <p class="pr-name">${allWork.titleElementsMo[0]}</p>
-        <p class="pr-desk-name">${allWork.titleElementsDesk[i+3]}</p>
+        <p class="pr-desk-name">${allWork.titleElementsDesk[i + 3]}</p>
       </li>
       <li><img class="dot" src="./images/dot.png" alt="stylistic text divider dot"></li>
       <li>
         <p class="art-name">${allWork.titleElementsMo[1]}</p>
-        <p class="art-desk-name">${allWork.titleElementsDesk[i+4]}</p>
+        <p class="art-desk-name">${allWork.titleElementsDesk[i + 4]}</p>
       </li>
       <li><img class="dot" src="./images/dot.png" alt="stylistic text divider dot"></li>
       <li>
         <p class="year">${allWork.titleElementsMo[2]}</p>
-        <p class="desk-year">${allWork.titleElementsDesk[i+5]}</p>
+        <p class="desk-year">${allWork.titleElementsDesk[i + 5]}</p>
       </li>
     </ul>
 
@@ -129,35 +129,34 @@ for (let i= 0;  i < 1; i++) {
     <p class="card-description desk-card-des">${allWork.cardDescriptionDesk[i+1]}</p>
     <ul class="card-subtitles card-desk-sub lang-width">
     <li class="languages">${allWork.languagesDesk[i]}</li>
-    <li class="languages hideMe">${allWork.languagesDesk[i+1]}</li>
-    <li class="languages">${allWork.languagesDesk[i+2]}</li>
-    <li class="languages">${allWork.languagesDesk[i+3]}</li>
+    <li class="languages hideMe">${allWork.languagesDesk[i + 1]}</li>
+    <li class="languages">${allWork.languagesDesk[i + 2]}</li>
+    <li class="languages">${allWork.languagesDesk[i + 3]}</li>
     
   </ul>
 
     <a class="card-button data-popup-ref" href="#">See Project</a>
   </div>
-  <img class="desk-card-img" src="${allWork.imagesDesk[i+1]}" alt="Desktop Tonic Project">
+  <img class="desk-card-img" src="${allWork.imagesDesk[i + 1]}" alt="Desktop Tonic Project">
 </section>
   `;
-}
+  }
 }
 
 const appbtn = document.querySelectorAll('.data-popup-ref');
 const wrapper = document.querySelector('.wrapper');
 const popClose = document.querySelector('.popup-close');
 
-
-function openModal(){
-  wrapper.style.display ='none';
-  popWindow.style.display ='inherit';
+function openModal() {
+  wrapper.style.display = 'none';
+  popWindow.style.display = 'inherit';
 }
 appbtn.forEach((appbtn) => {
   appbtn.addEventListener('click', openModal);
 });
 
-function closeModal(){
-  wrapper.style.display ='inherit';
-  popWindow.style.display ='none';
+function closeModal() {
+  wrapper.style.display = 'inherit';
+  popWindow.style.display = 'none';
 }
 popClose.addEventListener('click', closeModal);
