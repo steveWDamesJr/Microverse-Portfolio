@@ -8,6 +8,8 @@
 Additional description about the project and its features.
 ![screenshot](./images/demo-pic.png)
 
+![screenshot](./images/New-Project-Todo.png)
+
 
 ## Built With
 

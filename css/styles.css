@@ -6,6 +6,11 @@ html {
   box-sizing: border-box;
   margin-top: 0;
   background-color: #fff;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
 }
 
 .wrapper {
@@ -1093,6 +1098,7 @@ a {
   width: 136px;
   height: 48px;
   background: #fff;
+  text-align: center;
 }
 
 .popup-btn-links {
